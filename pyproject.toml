@@ -1,0 +1,13 @@
+[project]
+name = "coldfront-native-plugin"
+version = "0.1"
+description = "An example plugin for coldfront using the native plugin system"
+readme = "README.md"
+authors = [{ name = "Christopher Cave-Ayland" }]
+dependencies = ["coldfront", "django"]
+
+[project.entry-points.coldfront_plugins]
+app = "coldfront_native_plugin"
+
+[tool.setuptools.package-data]
+"*" = ["*.html", "*.js", "*.css"]
